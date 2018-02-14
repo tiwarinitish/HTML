@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UIbrain.com</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body{
+    	margin: 0;
+    	font-family: "franklin grapic Book",sans-serif;
+    }
+    	header,footer{
+    		background-color: #002741;
+    		color: white;
+    		padding: 10px;
+    		text-align:center;
+    		font-size: 20px;
+
+    	}
+    	/* Main navigation*/
+    	nav{
+    		background-color: black;
+
+
+    	}
+    	nav ul{
+    		list-style-type: none;
+    		overflow: hidden;/*mendetary*/
+    		padding: 0;
+    		margin: 0;
+
+    	}
+    	nav ul li{
+    		float: left; /*overflow the the backgroung color*/
+
+    	}
+    	nav ul li a{
+    		text-decoration: none;
+    		color: white;
+    		padding: 14px 20px;
+    		display: inline-block;
+    		font-size: 18px;
+
+    	}
+    	nav ul li a:hover{
+    		background-color: #739AB4;
+    		color: white;
+    		border-radius: 7px;
+    	}
+    	/*nav ul li a.active{
+    		background-color: #004777;
+    		color: white;
+    	}*/
+
+    	/*sidebar */
+
+    	aside{
+    		float: left;
+    		min-width: 200px;
+
+
+    	}
+    	aside ul{
+    		list-style-type: none;
+    		padding: 0;
+    		margin: 0;
+
+    	}
+    	aside ul li a{
+    			text-decoration: none;
+    			color: black;
+    			display: block; /*Mendetory*/
+    			padding: 14px 20px;
+    			
+    			font-size: 18px;
+
+    	}
+    	aside ul li a:hover{
+    		background-color:#5C89A8;
+    		color: white;
+    		border-radius: 8px;
+
+    	}
+    	/*aside ul li a.active{
+    		background-color: red;
+    		color: black;
+    	}*/
+
+
+    	/*main section*/
+    	section{
+    		margin-left: 200px;
+    		border-left: 2px #45799C;
+    		padding: 10px;
+
+    	}
+    	details{
+    		background-color: #00416D;
+    		color: white;
+    		padding: 15px;
+    		margin: 5px;
+
+    	}
+    	summary{
+    		outline: none;
+    	}
+    	details div{
+    		background-color:#A2BCCD;
+    		color: black;
+    		padding: 10px;
+    		margin: 10px;
+
+
+    	}
+    	details div h3{
+    		color: #001421;
+    	}
+    	/*main footer*/
+    	small{
+    		color: #F9845E;
+    	}
+
+    </style>
+</head>
+<body>
+
+	<!--main header-->
+
+	<header>
+		<h1>
+			<i class="fa fa-snowflake-o"></i>
+		UIBrains tecnologys <i class="fa fa-snowflake-o"></i> </h1>
+		<p>some small learning hub</p>
+	</header>
+
+	<!--main nav-->
+	<nav>
+		<ul>
+			<li>
+				<a href="#" class="active"><i class="fa fa-home"></i> Home</a>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-info"></i> About</a>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-address-book-o"></i> Contact</a>
+			</li>
+			<li>
+				<a href="#"> <i class="fa fa-mortar-board"></i> Careers</a>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-file-text" ></i> Form</a>
+			</li>
+		</ul>
+	</nav>
+	<!--side bar sec-->
+
+	<aside>
+		<ul>
+			<li>
+				<a href="#" class="active">HTML</a>
+			</li>
+			<li>
+				<a href="#">CSS</a>
+			</li>
+			<li>
+				<a href="#">Javascript</a>
+			</li>
+			<li>
+				<a href="#">Bootstrap</a>
+			</li>
+			<li>
+				<a href="#">AJAX</a>
+			</li>
+			<li>
+				<a href="#">JQuary</a>
+			</li>
+			<li>
+				<a href="#">Angularjs</a>
+			</li>
+			
+		</ul>
+	</aside>
+	<!--main section-->
+
+	<section>
+		<!--html-->
+		<details>
+			<summary>HTML</summary>
+			<div>
+				<h3>HTML</h3>
+				<p>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.</p>
+				<p> With Cascading Style Sheets (CSS) and JavaScript it forms a triad of cornerstone technologies for the World Wide Web.</p>
+			</div>
+		</details>
+		<!--css-->
+		<details>
+			<summary>CSS</summary>
+			<div>
+				<h3>CSS</h3>
+				<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.</p>
+				<p> Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML.</p>
+			</div>
+		</details>
+		<!--JS-->
+		<details>
+			<summary>javascript</summary>
+			<div>
+				<h3>javascript</h3>
+				<p>JavaScript often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language.</p>
+				<p> Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production</p>
+			</div>
+		</details>
+		<!--bootstrap-->
+		<details>
+			<summary>bootstrap</summary>
+			<div>
+				<h3>bootstrap</h3>
+				<p>Bootstrap. Build responsive, mobile-first projects on the web with the world's most popular front-end component library.</p>
+				<p> Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive</p>
+			</div>
+		</details>
+		<!--html-->
+		<details>
+			<summary>JAex</summary>
+			<div>
+				<h3></h3>
+				<p>ShareX is a free and open source program that lets you capture or record any area of your screen and share it with a single press of a key.</p>
+				<p> It also allows uploading images, text or other types of f…. ... ShareX/sharex.github.io.</p>
+			</div>
+		</details>
+		<!--html-->
+		<details>
+			<summary>Angularjs</summary>
+			<div>
+				<h3>Angularjs</h3>
+				<p>AngularJS is a JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications.</p>
+				<p></p>
+			</div>
+		</details>
+	</section>
+
+	<!---main footer-->
+
+	<footer>
+		<h3>Copyright&copy;2018,UIbrain.com</h3>
+		<p>All right reserbed</p>
+		<small>Developer & Maintained by nitish tiwari</small>
+	</footer>
+
+</body>
+</html>

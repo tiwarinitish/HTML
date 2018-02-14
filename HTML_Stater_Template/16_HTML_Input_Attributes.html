@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html input attribute</title>
+    <style>
+        div{
+            background-color: seagreen;
+            color: white;
+            width: 300px;
+
+            padding: 10px;
+            margin: 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- input attributes value , readonly , size , rows , cols-->
+    <div>
+    	<form>
+    		<label for="username">user name</label>
+    		<input type="text" id="username" value="nitish" disabled="true">
+    	</form>
+    </div>
+
+<div>
+    	<form>
+    		<label for="username1">user name</label>
+    		<input type="text" id="username1" id="nitish" readonly="true">
+    	</form>
+    </div>
+
+    <!--size-->
+    <div>
+    	<form>
+    		<label for="username2">user name</label>
+    		<input type="text" id="username2" id="username2" size="25">
+    	</form>
+    </div>
+
+
+    <!-- HTML 5 Form Attributes required ,
+    no-validate , autofocus , pattern , placeholder -->
+    <h1>HTML form Atribute</h1>
+<!--requred-->
+<div>
+    	<form>
+    		<label for="username3">user name</label>
+    		<input type="text" id="username3" id="username3" required>
+    		<input type="submit" valu="submit">
+    	</form>
+    </div>
+
+    <!--no-value-->
+    <div>
+    	<form>
+    		<label for="username4">enter email</label>
+    		<input type="email" id="email">
+    		<input type="submit" value="send">
+    	</form>
+    </div>
+<!--atofocus you can apply only onefield only-->
+    <div>
+    	<form>
+    		<label for="username5">user name</label>
+    		<input type="text" id="username5" autofocus>
+    		<label for="password1">password</label>
+    		<input type="password" id="password1">
+    	</form>
+    </div>
+    <!--pattern attribute-->
+
+    <div>
+    	<form>
+    		<label for="username6">user name</label>
+    		<input type="text" id="username6" pattern="^[A-Za-z0-9_]{1,15}$">
+    		<input type="submit" valu="submit">
+    	</form>
+    </div>
+
+    <!--place holder-->
+    <div>
+    	<form>
+    		<input type="text" placeholder="enter your name">
+    		<br>
+    		<textarea rows="5" cols="20"
+    		placeholder="your massage start hear...">
+    		</textarea>
+    	</form>
+    </div>
+
+</body>
+</html>
